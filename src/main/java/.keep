@@ -1,0 +1,17 @@
+zaxodim v
+C:\Users\JavaCourses1\Desktop\Viktorija\wildfly-11.0.0.Final\standalone\configuration\standalone.xml
+tuda zapisivaem adres DB
+
+<datasource jndi-name="java:jboss/datasources/BookshelfDS" pool-name="BookshelfDS" enabled="true" use-java-context="true">
+                    <connection-url>jdbc:h2:~/BookshelfDS;AUTO_SERVER=TRUE</connection-url>
+
+ne exploded - sozdajot arhiv i togda kladet na server.
+exploded rabotaet bistree
+
+podklju4itjsja k wild fly.
+sozdatj DB connection H2.
+
+ private String author; esli String s boljwoj bukvi, to mozhet bitj not null. esli s malenjkoj, to tip - primitivnij, toljko not null.
+ sozdatj class Book. ,
+ na peremennie sdelatj getteri i setteri.
+sdelali annotaciju na kazhduju peremenniju i posle redeploy, oni sozdalisj s baze sami
