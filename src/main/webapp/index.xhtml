@@ -11,9 +11,9 @@
 <h:body>
 <f:view>
     <h:form>
-        <h:inputText value="#{bookSearchForm}"/>
+        <h:inputText value="#{bookSearchForm.term}"/>
         <h:commandButton value = "Search" action="#{bookSearch.doSearch()}"/>
-    <ui:repeat value="#{bookSearch.searchResult}" var="book">
+    <ui:repeat value="#{bookSearchForm.searchResult}" var="book">
     <p> id: #{book.id}; title: <h:outputText value=" #{book.title}" ></h:outputText> </p>
     </ui:repeat>
 </h:form>

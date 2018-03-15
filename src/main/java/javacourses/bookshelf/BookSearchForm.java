@@ -10,16 +10,21 @@ import java.util.List;
 @Named
 public class BookSearchForm {
     private String term;
-private List
-        public String getTerm() {
-            return term;
-        }
+    private List<Book> searchResult;
 
-        public void setTerm(String term) {
-            this.term = term;
-        }
-
-
-
+    public String getTerm() {
+        return term;
     }
 
+    public void setTerm(String term) {
+        this.term = term;
+    }
+
+    public List<Book> getSearchResult() {
+        return searchResult;
+    }
+
+    public void setSearchResult(List<Book> searchResult) {
+        this.searchResult = searchResult;
+    }
+}

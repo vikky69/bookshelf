@@ -23,11 +23,14 @@ public class BookSearch {
 
     }
 
-    public void doSearch(){
-        Query q = em.createQuery("select b from Book b where  b.author = ?1");
-        q.setParameter("name", bookSearchForm.getTerm());
-        bookSearchForm.setSearchResult (q.getResultList());
-        System.out.println(bookSearchForm.getTerm());
-
+    public void doSearch() {
+        Query q = em.createQuery("SELECT b FROM Book b WHERE " +
+                "UPPER(b.author) LIKE :term " +
+                "OR UPPER(b.isbn) LIKE :term " +
+                "OR UPPER(b.title) LIKE :term " +
+                "OR UPPER(b.description) LIKE :term");
+        String term = "%" + bookSearchForm.getTerm().toUpperCase() + "%";
+        q.setParameter("term", term);
+        bookSearchForm.setSearchResult(q.getResultList());
     }
 }
