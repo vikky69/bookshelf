@@ -1,4 +1,4 @@
-package javacourses.bookshelf;
+package javacourses.bookshelf.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

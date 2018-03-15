@@ -5,3 +5,5 @@ INSERT INTO BOOK (ID, AUTHOR, DESCRIPTION, ISBN, TITLE, YEAR) VALUES(2,  'Rowlin
 INSERT INTO BOOK (ID, AUTHOR, DESCRIPTION, ISBN, TITLE, YEAR) VALUES (3,   'Tolkien J. R. R.', 'Publisher Toronto, New York, Bantam Books', 123, 'The return of the king : being the third part of The lord of the rings', 1978);
 
 INSERT INTO BOOK (ID, AUTHOR, DESCRIPTION, ISBN, TITLE, YEAR) VALUES(4,   'Alexandre Dumas', 'Publisher Toronto, New York, Bantam Books', 123, 'The count of Monte Cristo',  1998);
+
+INSERT into  user (ID, FULL_NAME) VALUES (1, 'John Smith');

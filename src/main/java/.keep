@@ -15,3 +15,9 @@ sozdatj DB connection H2.
  sozdatj class Book. ,
  na peremennie sdelatj getteri i setteri.
 sdelali annotaciju na kazhduju peremenniju i posle redeploy, oni sozdalisj s baze sami
+
+
+@Stateless //tut neljzja dannie xranitj, naprimer first name, chtobi dannie ne putalisj
+
+
+template.xhtml
