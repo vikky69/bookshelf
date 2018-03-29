@@ -14,7 +14,7 @@ public class User implements Serializable{
     private  Long id;
     @Column(name = "FULL_NAME")
     private String fullName;
-    @Column
+    @Column (unique = true) //v baze budet unikaljnij e-mail 
     private String email;
     @Column
     private String password;
