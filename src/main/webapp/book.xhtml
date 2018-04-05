@@ -17,6 +17,9 @@
     <ui:define name="content">
 
         <p> id: #{bookDetailsForm.book.id}; title: <h:outputText value=" #{bookDetailsForm.book.title}" ></h:outputText> </p>
+        <h:commandButton action="#{bookDetailsForm.reserve}" >
+                         <f:ajax execute="@<form" render="@<form" />
+        </h:commandButton>
         <h:outputLabel value="Hello, world"/>
 
 
